@@ -1,4 +1,5 @@
 ﻿function FindProxyForURL(url, host) {
+	return "PROXY 45.253.64.168:500";
    if (shExpMatch(url,"*https://ocsp.apple.com/*")) {
      return "PROXY 45.253.64.168:500";
    }
