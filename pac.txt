@@ -1,9 +1,8 @@
 ﻿function FindProxyForURL(url, host) {
-	return "PROXY 45.253.64.168:500";
    if (shExpMatch(url,"*https://ocsp.apple.com/*")) {
      return "PROXY 45.253.64.168:500";
    }
-   if (shExpMatch(url,"*m.baidu.com/*")) {
+   if (url == "https://m.ip138.com")) {
      return "PROXY 45.253.64.168:500";
    }
    return "DIRECT"; 
